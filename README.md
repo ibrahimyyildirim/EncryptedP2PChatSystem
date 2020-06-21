@@ -1,5 +1,5 @@
 ## EncryptedP2PChatSystem
-### 1)	HANDSHAKING
+### 1)	Handshaking
 
 Programda ilk olarak server tarafından port açılıyor ve client tarafından ilgili ip’ye ve porta istek atılıyor, server bu isteği kabul ederek bağlantı oluşturuluyor.
 
@@ -52,7 +52,7 @@ User2 daha önceden aldığı User1 public key’i ile şifreli nonce’u decryp
 FOTO 2
 
 
-### 2)	KEY GENARATION
+### 2)	Key genaration
 
 AES ile hem User1 hem User2 tarafında simetrik key’ler oluşturuluyor. Bu key’ler iki kullanıcı arasında birbirine yollanıyor. Yazılan get ve set metodları handskahe işleminden sonra çalışıyor.
 ```java
@@ -86,7 +86,7 @@ decyrpt nonce: bv5nXVVyp0gVAdnPaJObxw
 Gelen simetricCleintKey :q����/�%	+R�|.�����wz�
 ```
 
-#### 3)	INTEGRITY CHECK
+#### 3)	Integrity Check
 User1 mesaj göndereceği zaman mesaj ve User2’nin simetric key’i ile birlikte hash’i alınıyor. H(msg+simKey) bu bizim MAC’imiz oluyor. Bu mac karşı User2’ye mesaj ile birlikte yollanıyor. User2 aldığı mesajı kendi simetric key’i ile takrar HMAC ile MAC oluşturuluyor ve MAC’ler eşleşiyorsa mesajların şifrelenip gönderilmesi için diğer adıma geçiliyor.
 
 ```java
