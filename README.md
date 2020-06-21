@@ -1,4 +1,4 @@
-## EncryptedP2PChatSystem
+## Encrypted P2P Chat System
 ### 1)	Handshaking
 
 Programda ilk olarak server tarafından port açılıyor ve client tarafından ilgili ip’ye ve porta istek atılıyor, server bu isteği kabul ederek bağlantı oluşturuluyor.
