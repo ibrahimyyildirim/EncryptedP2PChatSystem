@@ -46,11 +46,12 @@ public static void user2Handshake() {
 ```
 
 ![1](https://github.com/ibrahimyyildirim/EncryptedP2PChatSystem/blob/master/img/1.png)<br>
+** Handshake bekleniyor, mesaj alanı inaktif **
 
 User2 daha önceden aldığı User1 public key’i ile şifreli nonce’u decrypt ediyor ve decrypt olan nonce önceden gönderdiği nonce ile aynı iste Handsake tamamlanmış oluyor ve mesaj yollamak için ekranda bulunan text alanı aktif oluyor. Ekrana “handshake is done” mesajı veriliyor. Eğer nonce’lar eşleşmezse mesaj alanı aktif olmuyor ve mesajlaşma işlemi başlamıyor.
 
-FOTO 2
-
+![2](https://github.com/ibrahimyyildirim/EncryptedP2PChatSystem/blob/master/img/2.png)<br>
+** Handshake tamamlandı, mesaj alanı aktif **
 
 ### 2)	Key genaration
 
@@ -105,8 +106,8 @@ User1 mesaj göndereceği zaman mesaj ve User2’nin simetric key’i ile birlik
     os.writeObject(mac);
 ```
 
-mac görsel
-
+![3](https://github.com/ibrahimyyildirim/EncryptedP2PChatSystem/blob/master/img/3.png)<br>
+** MAC **
 
 ### 4)	Message Encryption
  - User1 mesajı ecrypt ederek User2’ye gönderiyor
@@ -139,3 +140,5 @@ mac görsel
         System.out.println("exception");
      }
 ```
+![4](https://github.com/ibrahimyyildirim/EncryptedP2PChatSystem/blob/master/img/4.png)<br>
+** Program ekran görüntüleri **
