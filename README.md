@@ -45,7 +45,7 @@ public static void user2Handshake() {
     }
 ```
 
-FOTO 1
+![1](https://github.com/ibrahimyyildirim/EncryptedP2PChatSystem/blob/master/img/1.png)<br>
 
 User2 daha önceden aldığı User1 public key’i ile şifreli nonce’u decrypt ediyor ve decrypt olan nonce önceden gönderdiği nonce ile aynı iste Handsake tamamlanmış oluyor ve mesaj yollamak için ekranda bulunan text alanı aktif oluyor. Ekrana “handshake is done” mesajı veriliyor. Eğer nonce’lar eşleşmezse mesaj alanı aktif olmuyor ve mesajlaşma işlemi başlamıyor.
 
@@ -108,7 +108,7 @@ User1 mesaj göndereceği zaman mesaj ve User2’nin simetric key’i ile birlik
 mac görsel
 
 
-### 4)	MESSAGE ENCYRPTION
+### 4)	Message Encryption
  - User1 mesajı ecrypt ederek User2’ye gönderiyor
  
 ```java
