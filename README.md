@@ -77,7 +77,7 @@ AES ile hem User1 hem User2 tarafında simetrik key’ler oluşturuluyor. Bu key
     sendServerSimetricKey();
 ```
 
-Konsol ekranında giden ve gelen key’lerin gösterimi:
+**Konsol ekranında giden ve gelen key’lerin gösterimi:**
 ```sh
 Gelen public key :MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDP6++qWcYJMH/H8/SiXOq3ebPI6gITZfBerdkKVO1h9RvyiUqa4cyXiYXhAzFK2i5Y+6MxvYRJgZQCj8QAgoxvWY1KE0JClPzZeU76nnKrn0a3z49qByfyWrgj3zlm/vla8EaamyulLV5h+9aBBgBXu0a/gw/HJ0S8tBHU6KHdF
 Giden nonce: bv5nXVVyp0gVAdnPaJObxw
